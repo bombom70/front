@@ -1,0 +1,21 @@
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  background: white;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.searchImage {
+  width: 20px;
+  height: 20px;
+}

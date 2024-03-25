@@ -1,11 +1,30 @@
-import './app.scss';
+import { FC, useState } from 'react';
+import { SearchBar } from './components/searchBar/SearchBar.tsx';
+import { IUser } from './types/user.ts';
+import { IRepositorie } from './types/repositories.ts';
+import styles from './app.module.scss';
 
-function App() {
+const App: FC = () => {
+  const [userData, setUserData] = useState<IUser | null>(null);
+  const [repositories, setRepositories] = useState<IRepositorie[]>([]);
+
   return (
     <>
-      <h1>Hello</h1>
+      <header className={styles.header}>
+        <SearchBar
+          setUserData={setUserData}
+          setRepositories={setRepositories}
+        />
+      </header>
+      <main>
+        {!userData && !repositories?.length && (
+          <div className={styles.startScreen}>
+            <h1>Start with searching a GitHub user</h1>
+          </div>
+        )}
+      </main>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
