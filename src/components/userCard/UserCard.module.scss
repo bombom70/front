@@ -1,0 +1,40 @@
+.userCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.userName {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.userLogin {
+  text-decoration: none;
+  color: rgb(57, 60, 247);
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.3s;
+
+  &:hover {
+    color: rgb(13, 17, 238);
+  }
+}
+
+.userSub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.userSubItem {
+  font-size: 16px;
+}
