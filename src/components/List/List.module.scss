@@ -1,0 +1,22 @@
+.repositories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 auto;
+}
+
+.repositoriItem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  font-size: 24px;
+  color: rgb(57, 60, 247);
+}
